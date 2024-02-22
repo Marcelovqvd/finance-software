@@ -7,14 +7,16 @@ import {
   Validators,
 } from '@angular/forms';
 
+interface CDBFormInterface 
+
 @Component({
-  selector: 'app-cdb-calc',
+  selector: 'app-cdbform',
   standalone: true,
   imports: [BtnPrimaryComponent, ReactiveFormsModule],
-  templateUrl: './cdb-calc.component.html',
-  styleUrl: './cdb-calc.component.scss',
+  templateUrl: './cdbform.component.html',
+  styleUrl: './cdbform.component.scss',
 })
-export class CdbCalcComponent {
+export class CDBformComponent {
   valueForm!: FormGroup;
 
   constructor() {

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CdbCalcComponent } from './cdb-calc.component';
+import { CDBformComponent } from './cdbform.component';
 
-describe('CdbCalcComponent', () => {
-  let component: CdbCalcComponent;
-  let fixture: ComponentFixture<CdbCalcComponent>;
+describe('CDBformComponent', () => {
+  let component: CDBformComponent;
+  let fixture: ComponentFixture<CDBformComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CdbCalcComponent]
+      imports: [CDBformComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(CdbCalcComponent);
+    fixture = TestBed.createComponent(CDBformComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

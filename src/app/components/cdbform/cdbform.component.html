@@ -5,12 +5,21 @@
   </div>
   <form [formGroup]="valueForm">
     <label for="value">Valor</label>
-    <input id="value" formControlName="value" />
+    <input
+      id="value"
+      name="value"
+      formControlName="value"
+      placeholder="Digite um valor"
+      [(ngModel)]="inputValue"
+    />
     <btn-primary
       btn-text="Enviar"
       (submit)="onSubmit()"
       [disabled]="!valueForm.valid"
       >Enviar</btn-primary
     >
+    <p>Value: {{ valueForm }}</p>
+    <input type="text" />
+    <p>The value you entered is: {{ inputValue }}</p>
   </form>
 </section>
