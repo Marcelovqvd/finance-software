@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './cdb-calc.component.html',
   styleUrl: './cdb-calc.component.scss',
+  template: `Hello {{ city }}`,
 })
-export class CdbCalcComponent {}
+export class CdbCalcComponent {
+  city = 'San Francisco';
+}
