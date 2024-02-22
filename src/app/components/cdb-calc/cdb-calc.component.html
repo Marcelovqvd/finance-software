@@ -1,4 +1,16 @@
-<div>
-  <h1>Cálculo do CBD</h1>
-  <input type="number" />
-</div>
+<section class="form-section">
+  <div>
+    <h3>Cálculo do CBD</h3>
+    <p>Calcule o seu CBD</p>
+  </div>
+  <form [formGroup]="valueForm">
+    <label for="value">Valor</label>
+    <input id="value" formControlName="value" />
+    <btn-primary
+      btn-text="Enviar"
+      (submit)="onSubmit()"
+      [disabled]="!valueForm.valid"
+      >Enviar</btn-primary
+    >
+  </form>
+</section>
