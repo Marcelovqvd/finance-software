@@ -7,8 +7,6 @@ import {
   Validators,
 } from '@angular/forms';
 
-interface CDBFormInterface 
-
 @Component({
   selector: 'app-cdbform',
   standalone: true,
@@ -18,6 +16,7 @@ interface CDBFormInterface
 })
 export class CDBformComponent {
   valueForm!: FormGroup;
+  userValue = null;
 
   constructor() {
     this.valueForm = new FormGroup({
@@ -30,5 +29,6 @@ export class CDBformComponent {
 
   onSubmit() {
     console.log(this.valueForm.value);
+    this.userValue = this.valueForm.value;
   }
 }

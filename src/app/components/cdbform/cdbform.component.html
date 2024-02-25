@@ -10,7 +10,7 @@
       name="value"
       formControlName="value"
       placeholder="Digite um valor"
-      [(ngModel)]="inputValue"
+      [(ngModel)]="userValue"
     />
     <btn-primary
       btn-text="Enviar"
@@ -18,8 +18,9 @@
       [disabled]="!valueForm.valid"
       >Enviar</btn-primary
     >
-    <p>Value: {{ valueForm }}</p>
-    <input type="text" />
-    <p>The value you entered is: {{ inputValue }}</p>
+    @if(userValue) {
+    <p>Value: {{ userValue }}</p>
+    }
+    <p>The value you entered is: {{ userValue }}</p>
   </form>
 </section>
